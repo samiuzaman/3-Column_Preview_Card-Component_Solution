@@ -1,0 +1,102 @@
+/* Root Secton Code Start Here */
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --paragraphsColor: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+/* Root Secton Code End Here */
+/* Reset Code Start Here */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+/* Reset Code End Here */
+body {
+  font-size: 15px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto 0;
+}
+.card-one,
+.card-two,
+.card-three {
+  width: 300px;
+  height: 450px;
+  padding: 40px;
+}
+.card-one {
+  background-color: var(--brightOrange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card-one button {
+  color: var(--brightOrange);
+}
+.card-two {
+  background-color: var(--darkCyan);
+}
+.card-two button {
+  color: var(--darkCyan);
+}
+.card-three {
+  background-color: var(--veryDarkCyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-three button {
+  color: var(--veryDarkCyan);
+}
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--veryLightGray);
+  padding: 32px 0;
+  font-size: 35px;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--paragraphsColor);
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.btn-style {
+  border: 2px solid var(--veryLightGray);
+  background-color: var(--veryLightGray);
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 15px;
+}
+.btn-style:hover {
+  background-color: transparent;
+  color: var(--paragraphsColor);
+}
+
+/* Responsive Mobile Section Code Start */
+@media screen and (max-width: 375px) {
+  section {
+    flex-direction: column;
+    height: 190vh;
+  }
+  .card-one {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .card-three {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
